@@ -1,0 +1,9 @@
+{
+    "$schema": "",
+    "type": "QuickStart-Template",
+    "itemDisplayName": "Sample Template",
+    "description": "A sample template. Place holder for parameters file.",
+    "summary": "A Sample template and parameters file.  Use this template as the framework for your custom deployment.",
+    "githubUsername": "",
+    "dateUpdated": "2022-10-14"
+  }

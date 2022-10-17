@@ -1,0 +1,13 @@
+pool:
+  name: Azure Pipelines
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  displayName: 'ARM Template deployment: Resource Group scope'
+  inputs:
+    azureResourceManagerConnection: quicktemplatesconnection
+    subscriptionId: 'cdf061dc-a659-4ff3-ba44-ab35210087a2'
+    resourceGroupName: armstorage
+    location: 'East US'
+    csmFile: arm/iac/azuredeploy.json
+    csmParametersFile: arm/iac/azuredeploy.parameters.json
+    deploymentName: armstoragedeployment
